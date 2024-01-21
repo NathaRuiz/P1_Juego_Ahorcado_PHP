@@ -22,6 +22,7 @@ header{
 main{
     width: 60%;
     height: 80vh;
+    border-radius:10px ;
 }
 .blackboard{
     max-width: 100%;
@@ -30,17 +31,9 @@ main{
     border-color: rgb(170, 126, 45)  rgb(121, 88, 28);
     border-radius: 10px;
     box-shadow: 0 15px 15px rgba(0, 0, 0, 0.8);
-    background-color: inherit;
+    background-color: black;
     color: white;
     position: relative;
-}
-
-.image {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: -1;
-    background-size: cover;
 }
 
 .blackboard-content{
@@ -50,31 +43,61 @@ main{
  flex-direction: column;
 }
 
-.formReload{
-    display: flex;
-    justify-content: end;
-    padding: 20px;
+.image {
+    width: 30%;
+    height: 100%;
+    background-size: cover;
 }
-.reload{
-    background-color: inherit;
-    color: white;
-    font-size: 20px;
-    border: none;
-    border-bottom: 1px solid white;
-    font-family: 'Love Ya Like A Sister', cursive;
-}
+
 .title{
     display: flex;
     justify-content: center;
     padding: 10px;
     font-size: 40px;
+    margin-top: 3%;
 }
+
+.infoGame{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 50px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.guessedLetterContainer{
+    display: flex;
+    margin-top: 5%;
+}
+.guessedLetter{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.secretWord{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: xx-large;
+    width: 90%;
+}
+
 .formAddLetter{
     display: flex;
     justify-content: center;
     padding: 20px;
     font-size: 18px;
-    
+    width: 90%;
+}
+.formReload{
+    display: flex;
+    justify-content: end;
+    padding: 20px;
 }
 input[type="text"]{
  margin: 5px;
@@ -84,7 +107,7 @@ input[type="text"]{
  width: 30px;
  color: white;
 }
-.submit{
+input[type="submit"]{
     margin-left: 5px;
     background-color: inherit;
     color: white;
@@ -93,21 +116,6 @@ input[type="text"]{
     border: 1px solid white;
     border-radius: 10px;
     font-family: 'Love Ya Like A Sister', cursive;
-}
-
-.colorContainer{
-    margin-top: 20px;
-    display: flex;
-    justify-content: end;
-    width: 100%;
-    padding-right: 60px;
-    font-size: 18px;
-    gap: 20px;
-}
-.colorContainer span{
-    border-bottom: 1px solid white;
-    width: 20px;
-    padding-left: 4px;
 }
 
 
@@ -119,6 +127,15 @@ input[type="text"]{
     .blackboard {
         height: 50%;
     }
+    .title{
+        font-size: 30px;
+    }
+    .image {
+        width: 30%;
+        height: 90%;
+        background-size: cover;
+    }
+    
 }
 
 @media screen and (max-width: 600px) {
@@ -128,5 +145,33 @@ input[type="text"]{
 
     .blackboard {
         height: 40%;
+    }
+    .title{
+        font-size: 20px;
+    }
+    .infoGame{
+        gap: 5px;
+        margin-left: 10px;
+        margin-top: 5px;
+        font-size: 10px;
+    }
+    
+    .secretWord{
+        font-size: 10px;
+    }
+    .formAddLetter{
+        font-size: 10px;
+        
+    }
+    .formReload{
+        padding: 10px;
+    }
+    input[type="text"]{
+     width: 30px;
+     color: white;
+
+    }
+    input[type="submit"]{
+        font-size: 10px;
     }
 }
