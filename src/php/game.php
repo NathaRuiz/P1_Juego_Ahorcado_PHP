@@ -129,19 +129,20 @@ function resultGame()
 {
     global $won;
     if ($_SESSION['attempts'] === 0) {
-        echo "<h1>¡Has perdido!</h1>;";
-        echo " <div><span>La palabra correcta era: {$_SESSION['word']} </span>";
+        echo '<div class="result"><h1>¡Has perdido!</h1>';
+        echo " <span>La palabra correcta era: {$_SESSION['word']} </span>";
         echo '<form method="get" action="">
         <input type="submit" name="Restart" value="Restart">
     </form> </div>';
         echo "<img class='image' src=" . getCurrentImage() . " >";
     }
     if ($won) {
-        echo "<h1>¡Felicidades!</h1>;";
+        echo '<div class="result"><h1>¡Felicidades!</h1>';
         echo "adivinaste la palabra : {$_SESSION['word']}";
-        echo '<div><form method="get" action="">
-        <input type="submit" name="Restart" value="Restart">
+        echo '<form method="get" action="">
+        <input type="submit" name="Restart" value="Restart"><br>
     </form> </div>';
+    echo '<img class="imgWin" src="../assets/images/win.jpg">';
     }
 }
 

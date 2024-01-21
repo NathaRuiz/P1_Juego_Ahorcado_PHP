@@ -118,6 +118,17 @@ input[type="submit"]{
     font-family: 'Love Ya Like A Sister', cursive;
 }
 
+.result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    gap: 10px;
+}
+.imgWin{
+    width: 30%;
+    margin: auto;
+}
 
 @media screen and (max-width: 900px){
     main {
