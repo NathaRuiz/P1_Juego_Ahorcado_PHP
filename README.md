@@ -12,7 +12,7 @@ El proyecto consiste en la implementación del juego “ahorcado” en PHP sin e
 ## Proceso 
 ### Tecnologías
 Para este proyecto he utilizado las tecnologías:
-- <img src="https://skillicons.dev/icons?i=html,php,)](https://skillicons.dev"/>
+- <img src="https://skillicons.dev/icons?i=html,css,php,)](https://skillicons.dev"/>
 
 ## Pasos de Instalación
 1. [Clonar](https://docs.github.com/es/repositories/creating-and-managing-repositories/cloning-a-repository) el repositorio.
@@ -25,7 +25,7 @@ Para este proyecto he utilizado las tecnologías:
 
 5. Coloca tu proyecto en la carpeta htdocs: En XAMPP, el directorio home del servidor web es htdocs. Coloca el proyecto en este directorio.
 
-6. Acceda a su proyecto en el navegador: Abra su navegador web y visite http://localhost/P1_Juego_Ahorcado_PHP/src/php/index.php 
+6. Acceda a su proyecto en el navegador: Abra su navegador web y visite la ruta del proyecto colocando de primero el localhost, por ejemplo: http://localhost/P1_Juego_Ahorcado_PHP/src/php/index.php 
 
 7. Disfrútelo.
 
